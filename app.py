@@ -14,7 +14,6 @@ model = load_model('SimpleRNN.h5')
 st.title("Fake News Detection")
 
 sentence = st.text_area("Enter a sentence")
-
 def predict_sentiment(sentence):
     tokenizer = Tokenizer()
     tokenizer.fit_on_texts([sentence])
